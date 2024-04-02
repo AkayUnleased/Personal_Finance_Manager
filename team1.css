@@ -1,0 +1,253 @@
+* {
+  background-color: #a2d5f2;
+}
+.skills .skills-heading {
+  font-size: 80px;
+  background-color: aliceblue;
+  font-weight: 600;
+  color: #07374a;
+  text-align: center;
+  border-radius: 5px;
+  border: 3px solid rgb(5, 5, 5);
+}
+
+.about-me .about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-content .left-content {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.about-content .right-content {
+  flex-basis: 100%;
+}
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #feca3b61;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  /* background: #25b79f; */
+  background: #07689f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 2) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+.progress-line .javascript {
+  width: 62%;
+}
+.progress-line .c {
+  width: 50%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #d60a0a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+.progress-line .javascript::after {
+  content: "50%";
+}
+.progress-line .c::after {
+  content: "50%";
+}
+
+.navbar.solid {
+  background-color: #07374a;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+
+.navbar-brand {
+  display: none;
+  color: #d2d20f;
+  font-weight: 400;
+}
+
+.work-arrow {
+  margin: 2rem 0;
+}
+
+.work-arrow a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+}
+
+.work-arrow-2 {
+  margin: 2rem 0;
+}
+
+.work-arrow-2 a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #25b79f;
+  display: none;
+}
+/* #### MEDIA SCREEN #### */
+/* Your existing CSS code */
+
+/* Your existing CSS code */
+
+/* Your existing CSS code */
+
+/* Your existing CSS code */
+
+/* Your existing CSS code */
+
+@media screen and (max-width: 480px) {
+  .skills .skills-heading {
+    font-size: 50px;
+    background-color: aliceblue;
+    font-weight: 600;
+    color: #07374a;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid rgb(5, 5, 5);
+  }
+  * {
+    background-color: #a2d5f2;
+  }
+  .bar {
+    /* background-color: #0a927b; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  span {
+    /* background-color: aqua; */
+    color: black;
+  }
+  .info {
+    /* background-color: #d60a0a; */
+  }
+  .progress-line {
+    width: 50%;
+  }
+  .progress-line .html {
+    width: 80%;
+  }
+  .progress-line .css {
+    width: 70%;
+  }
+  .progress-line .bootstrap {
+    width: 50%;
+  }
+  .progress-line .javascript {
+    width: 62%;
+  }
+  .progress-line .c {
+    width: 50%;
+  }
+
+  /* ########## */
+  .skills-bar .bar {
+    margin: 25px 0;
+  }
+
+  .skills-bar .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .skills-bar .bar .info {
+    margin-bottom: 8px;
+    color: #8d75e6;
+  }
+
+  .skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 100%;
+    /* background: #f0f0f0; */
+    background: #feca3b61;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  }
+}

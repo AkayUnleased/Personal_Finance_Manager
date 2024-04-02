@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+  }
+  .loader{
+    transition:0.3s all ease ;
+  }
+  
+  
+  
+  .skelnamebar {
+    background: #fff;
+    height: 92px;
+    padding: 6px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .skelavatar,
+  .skellogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ddd;
+    margin: 10px;
+    animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  .skelname{
+    width: 50px;
+    height: 50px;
+    border-radius: 5%;
+    background: #ddd;
+    margin: 10px;
+    animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  
+  .skelname,
+  .skelbankacc {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .skelnavtab {
+    background-color: #ececec;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .skelnavtab ul {
+    overflow: auto;
+    animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  
+  .skeleton-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 12px;
+    padding: 20px;
+    animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  .chotebox{
+    background-color: #ffffff00;
+    border: 1px solid #dddddd00;
+    border-radius: 10px;
+    display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 49px;
+  }
+  
+  .box1,.box2{
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      flex: 1; 
+      padding: 20px;
+      border-radius: 10px;
+  position: static;
+  left: 33px;
+  height: 158px;
+  text-decoration: none;
+  animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  .budbox{
+      width: 95%;
+      background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 60px;
+    animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  hr{
+      opacity: 30%;
+  }
+  .skelfooter{
+      background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 100px;
+    animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  
+  @keyframes shimmer {
+      0%{
+          background-position: 100%;
+      }
+      100%{
+          background-position: 0%;
+      }
+  }
+  .loader.hide{
+    /* opacity: 0; */
+    display: none;
+    pointer-events: none;
+  }
+  @media screen and (max-width: 480px){
+    .skelnamebar {
+    background: #fff;
+    height: 11vh;
+  padding: 6px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: pulse 1.5s infinite;
+  }
+  .skelname,
+  .skelbankacc {
+    flex: 1;
+    margin-left: 10px;
+  }
+  
+  .chotebox{
+    display: flex;
+    flex-direction: column;
+  }
+  .box1 ,.box2{
+    width: 90%;
+  align-items: center;
+  justify-content: center;
+  min-height: 15vh;
+  max-height: 25vh;
+  }
+  .budskel{
+    padding: 50px;
+  display: block;
+  }
+  .skelbudbox{
+    
+      width: 95%;
+      background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0px -55px;
+    padding: 70px 130px;
+    animation: shimmer 1s linear infinite;
+    background-size: 400%;
+    background-image: linear-gradient(to right, #f2f2f2 0%, #f2f2f2 30%,#d9d9d9 45%, #d9d9d9 50%,#f2f2f2 60%,#f2f2f2 100%);
+  }
+  }

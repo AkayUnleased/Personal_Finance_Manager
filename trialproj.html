@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Manager</title>
+    <link type="image/svg" sizes="16x16" rel="icon" href="bank.svg" />
+    <link rel="stylesheet" type="text/css" href="newfin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="bank.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Kanit:wght@300&family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Kanit:wght@300&family=Lilita+One&family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--SKELETON LOADER-->
+    <div class="loader">
+      <div class="skelheader">
+        <div class="skelnamebar">
+          <div class="skelavatar"></div>
+          <span class="skelname"></span>
+          <span class="skelbankacc"></span>
+          <div class="skellogo"></div>
+        </div>
+      </div>
+
+      <div class="skelmain">
+        <div class="skelnavtab skel">
+          <div class="skeleton-box skel"></div>
+          <!-- <img src="darkmode.svg" id="dark"> -->
+        </div>
+
+        <div class="chotebox skel">
+          <span class="box1 skel"></span>
+          <span class="box2 skel"></span>
+        </div>
+
+        <div class="chotebox skel">
+          <span class="box1 skel"></span>
+          <span class="box2 skel"></span>
+        </div>
+
+        <hr />
+
+        <div class="chotebox skel">
+          <span class="budbox skel"></span>
+        </div>
+
+        <div class="chotebox skel"></div>
+
+        <div class="skelfooter">
+          <div class="footer skel"></div>
+        </div>
+      </div>
+    </div>
+    <!--SKELETON LOADER ENDS-->
+    <div class="container">
+      <header>
+        <div class="namebar">
+          <img src="profile.svg" class="avatar" />
+          <span class="name"> Anup Soni</span><br />
+          <span class="bankacc">Bank account</span>
+          <img class="logo" src="bank.svg" />
+        </div>
+      </header>
+
+      <main>
+        <div class="navtab">
+          <ul class="listnav">
+            <!-- <li><a href="default.asp" target="_blank">Home</a></li> -->
+            <li>
+              <a href="news.html" target="_blank">News</a>
+            </li>
+            <li><a href="contact.html" target="_blank">Help</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+          </ul>
+          <img src="darkmode.svg" id="dark" />
+        </div>
+
+        <div class="comb1">
+          <a class="linkwall" href="######">
+            <div class="walletbox">
+              <img class="wallimg" src="wallet.svg" />
+              <p class="walltxt">Wallet</p>
+              <br />
+              <p class="wallamt">₹ 125100</p>
+            </div>
+          </a>
+          <a class="linkhist" href="transaction.html.html">
+            <div class="history">
+              <img class="histimg" src="history.svg" />
+              <span class="trxnhst">History</span><br />
+              <span class="lasttran"> -₹ 6000</span>
+            </div>
+          </a>
+        </div>
+        <div class="comb2">
+          <div class="incomebox">
+            <img class="incimg" src="income.svg.svg" />
+            <p class="incometxt">Income</p>
+            <form>
+              <input
+                id="incomenumber"
+                class="number"
+                name="number"
+                type="number"
+                placeholder="Enter Income"
+              />
+              <br />
+              <input
+                id="submit"
+                name="submit"
+                class="submit1"
+                type="submit"
+                value="Credit"
+                placeholder="Done"
+              />
+            </form>
+          </div>
+          <div class="expbox">
+            <img class="expimg" src="wallet.svg" />
+            <p class="exptxt">Expense</p>
+            <form>
+              <input
+                class="number"
+                id="expnumber"
+                type="number"
+                placeholder="Enter Expense"
+              />
+              <br />
+              <input
+                id="submit"
+                class="submit2"
+                name="submit"
+                type="submit"
+                value="Debit"
+                placeholder="Done"
+              />
+            </form>
+          </div>
+        </div>
+        <hr />
+        <a href="team.html" class="linkbud">
+          <div class="budgetbox">
+            <img class="bgtimg" src="budget.svg" />
+            <p class="bgttxt">Budget</p>
+            <br />
+            <p class="gad">Gadget</p>
+            <label for="progressbar"></label><br />
+            <progress
+              id="progressbar"
+              class="progressbar"
+              value="80"
+              max="100"
+            ></progress>
+          </div>
+        </a>
+        <footer>
+          <div class="footer">
+            <div class="row">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+              <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="row">
+              PersonalFinanceManager Copyright © 2023 PFM - All rights reserved
+              ||
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script>
+      var icon = document.getElementById("dark");
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "lightmode.svg";
+        } else {
+          icon.src = "darkmode.svg";
+        }
+      };
+      const loader = document.querySelector(".loader");
+      const content = document.querySelector(".content");
+      window.addEventListener("load", () => {
+        loader.classList.add("hide");
+        content.classList.add("show");
+      });
+      // ######
+      document.addEventListener("DOMContentLoaded", function () {
+  let walletAmount = 0;
+  updateWalletAmount();
+
+  const incomeForm = document.querySelector(".incomebox form");
+  const expenseForm = document.querySelector(".expbox form");
+
+  incomeForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const incomeInput = document.getElementById("incomenumber");
+    const incomeValue = parseFloat(incomeInput.value);
+
+    if (!isNaN(incomeValue) && incomeValue >= 0) {
+      walletAmount += incomeValue;
+      updateWalletAmount();
+
+      updateHistoryBox(incomeValue, true);
+
+      incomeInput.value = "";
+    } else {
+      alert("Please enter a valid positive number for income.");
+    }
+  });
+
+  expenseForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const expenseInput = document.getElementById("expnumber");
+    const expenseValue = parseFloat(expenseInput.value);
+
+    if (!isNaN(expenseValue) && expenseValue >= 0) {
+      if (walletAmount >= expenseValue) {
+        walletAmount -= expenseValue;
+        updateWalletAmount();
+
+        updateHistoryBox(expenseValue, false);
+
+        expenseInput.value = "";
+      } else {
+        alert("Insufficient funds. Please enter a valid expense amount.");
+      }
+    } else {
+      alert("Please enter a valid positive number for expense.");
+    }
+  });
+
+  function updateWalletAmount() {
+    const walletAmountElement = document.querySelector(".wallamt");
+    walletAmountElement.textContent = `₹ ${walletAmount.toFixed(2)}`;
+  }
+
+  function updateHistoryBox(value, isIncome) {
+    const historyBoxElement = document.querySelector(".lasttran");
+
+    const sign = isIncome ? "+" : "-";
+    const color = isIncome ? "green" : "red";
+
+    historyBoxElement.textContent = `${sign}₹ ${value.toFixed(2)}`;
+    historyBoxElement.style.color = color;
+  }
+});
+
+      // #####
+    </script>
+  </body>
+</html>
